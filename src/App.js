@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Weather from './components/Weather.js';
+import Clock from './components/Clock.js';
+import Timer from './components/Timer.js';
 
 class App extends Component {
   render() {
@@ -9,11 +11,24 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Todays Weather in Stockholm</h1>
-          <Weather/>
+          <Weather />
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className="container">
+          <div className="row">
+
+            <div className="col-xs-6 App-clock">
+              <Clock />
+            </div>
+
+            <div className="col-xs-6 App-timer">
+              <Timer />
+            </div>
+
+          </div>
+        </div>
+
+
+        
       </div>
     );
   }
