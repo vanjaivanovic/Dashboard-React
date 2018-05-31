@@ -15,7 +15,7 @@ class Timer extends Component {
   }
 
   tick = () => {
-    this.interval = setInterval(() => {
+    this.incrementer = setInterval(() => {
       this.setState({
         secondsStartPoint: (this.state.secondsStartPoint + 1)
     }) 
@@ -23,7 +23,7 @@ class Timer extends Component {
   }
 
   stopTimer = () => {
-    clearInterval(this.interval);
+    clearInterval(this.incrementer);
   }
 
   resetTimer = () => {
