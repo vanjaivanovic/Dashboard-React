@@ -14,13 +14,10 @@ updateTime = () => {
 }
 
 render() {
-  return (<div className="time" >
-
-  <p className="clock">{this.state.time.toLocaleTimeString()}</p>
-    </div>)
-}
-
-
+  return (<div className="time">
+            <p className="clock">{this.state.time.toLocaleTimeString()}</p>
+        </div>)
+  }
 }
 
 export default Clock;

@@ -33,7 +33,7 @@ class App extends Component {
             </div>
           </div>
 
-          <div className="row">
+          <div className="row Currency-row">
             <div className="col-xs-12 col-sm-offset-4 col-sm-4 App-currency">
               <Currency />
             </div>

@@ -33,14 +33,15 @@ class Timer extends Component {
   }
   render() {
     return (
-      <div>
-      <div className="Timer"> {this.showMinutes()} : {this.showSeconds()}
-      </div>
+      <div className="timer-box">
+        <div className="Timer"> {this.showMinutes()} : {this.showSeconds()}
+        </div>
 
-      <div><button className="startButton" onClick={this.tick}>Start</button>
-      <button className="stopButton" onClick={this.stopTimer}>Stop</button>
-      <button className="resetButton" onClick={this.resetTimer}>Reset</button>
-      </div>
+        <div>
+          <button className="startButton" onClick={this.tick}>Start</button>
+          <button className="stopButton" onClick={this.stopTimer}>Stop</button>
+          <button className="resetButton" onClick={this.resetTimer}>Reset</button>
+        </div>
       </div>
     );
   }
