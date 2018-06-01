@@ -1,7 +1,7 @@
 # Dashboard UI React App
 Av Vanja Ivanovic
 Gå till repository: <https://github.com/vanjaivanovic/Dashboard-React>
-Se appen på GitHub Pages: <>
+Se appen på GitHub Pages: <https://vanjaivanovic.github.io/Dashboard-React>
 ## Description
 **A Dashboard UI App created with React
 Dashboard UI:
