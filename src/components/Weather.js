@@ -11,7 +11,7 @@ class Weather extends Component {
     }
 
     fetchWeatherAPI = () => {
-      fetch('http://api.openweathermap.org/data/2.5/forecast?units=metric&id=2673722&APPID=4f502c7585fdee15f137e563517e9086')
+      fetch('https://api.openweathermap.org/data/2.5/forecast?units=metric&id=2673722&APPID=4f502c7585fdee15f137e563517e9086')
       .then(response => response.json())
       .then((data) => {
         this.setState({WeatherTemp: (data.list[0].main.temp).toFixed(0)})

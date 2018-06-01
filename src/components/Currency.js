@@ -12,7 +12,7 @@ class Currency extends Component {
     }
 
     fetchCurrencyAPI = () => {
-      fetch('http://www.apilayer.net/api/live?access_key=d110e947be5a421a93345033c583d606')
+      fetch('https://www.apilayer.net/api/live?access_key=d110e947be5a421a93345033c583d606')
       .then(response => response.json())
       .then((data) => { 
           this.setState({ exchangeRate: data.quotes.USDSEK.toFixed(2)})
