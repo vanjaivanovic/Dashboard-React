@@ -14,9 +14,9 @@ updateTime = () => {
 }
 
 render() {
-  return (<div className="time">
+  return (<div className="time" >
 
-  {this.state.time.toLocaleTimeString()}
+  <p className="clock">{this.state.time.toLocaleTimeString()}</p>
     </div>)
 }
 

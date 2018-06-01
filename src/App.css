@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  margin-bottom: 50px;
+  width: 100%;
 }
 
 .App-logo {
@@ -8,14 +10,17 @@
 }
 
 .App-header {
-  background-color: #cff756;
-  height: 150px;
+  background-image: url(./images/sky.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 330px;
   padding: 20px;
   color: black;
 }
 
 .App-title {
-  font-size: 1.5em;
+  padding-top: 50px;
+  font-size: 2.5em;
 }
 
 .App-intro {
@@ -27,15 +32,78 @@
   font-weight: bold;
 }
 
-.stickyNote {
-  margin-top: 30px;
-  margin-bottom: 15px;
-  padding-top: 50px;
-  background: yellow;
+.stickyNote, .rate {
+  font-size: 2em;
+  font-family: Marker Felt;
+  margin-top: 15px;
+  margin-left: 400px;
+  padding-top: 20px;
+  padding-left: 20px;
+  background: #ffff99;
   height: 200px;
+  width: 300px;
+  border-radius: 5px;
+  border: 2px solid #90ee90;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+#submitButton{
+  border-radius: 5px;
+  margin-left: 650px;
+  margin-bottom: 10px;
+  background: #90ee90;
 }
+
+.time , .App-timer {
+  width: 270px;
+  height: 270px;
+  margin-left: 200px;
+  padding-top: 100px;
+  border-radius: 50%;
+  
+}
+
+.time {
+  background-image: url(./images/clock.jpg);
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.clock {
+  font-size: 3em;
+  font-weight: bold;
+  opacity: 1;
+}
+
+.App-timer {
+  background-image: url(./images/timer.png);
+  background-size: cover;
+  background-position: center;
+  font-size: 1em;
+  margin-left: 200px;
+  padding-top: 95px;
+}
+
+.Timer {
+  font-size: 3em;
+}
+.startButton, .stopButton, .resetButton {
+  font-size: 1em;
+  border-radius: 5px;
+  margin-left: 5px;
+  background: #90ee90;
+}
+
+.startButton:hover, .stopButton:hover, .resetButton:hover {
+  font-size: 1em;
+  background: lightblue;
+}
+
+.rate {
+  height: 150px;
+  width: 300px;
+  background: lightblue;
+  border-radius: 5px;
+  
+}
+
+

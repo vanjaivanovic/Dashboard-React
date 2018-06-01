@@ -15,8 +15,7 @@ class Postit extends Component {
   render(){
     return(
       <div>
-        <div className="stickyNote"><p>{this.state.postIt}</p></div>
-          <TextArea formId="form" textAreaId="input" submitButton="submitButton" event={this.postItValue}/>
+        <TextArea textAreaClass="stickyNote" formId="form" textAreaId="input" placeholder={this.state.postIt} submitButton="submitButton" event={this.postItValue}/>
       </div>
       )
 
